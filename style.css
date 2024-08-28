@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    flex: 1;
+}
+
+.frame{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    width: 275px;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: 5px solid #000005;
+}
+
+.camera{
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #000005;
+    z-index: 1;
+}
+
+.exit{
+    position: absolute;
+    bottom: 3px;
+    height: 8px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: white;
+    z-index: 2;
+}
+
+.button{
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    background-color: #000005;
+}
+
+.first{
+    left: -7px;
+    top: 125px;
+    border-radius: 10px 0 0 10px;
+}
+
+.second{
+    left: -7px;
+    top: 175px;
+    border-radius: 10px 0 0 10px;
+}
+
+.third{
+    border-radius: 0 10px 10px 0;
+    right: -7px;
+    top: 125px;
+}
+
+.back-frame{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    width: 275px;
+    background-color: #555c6a;
+    border-radius: 30px;
+    border: 5px solid #000005;
+}
+
+.back-camera-container{
+    position: absolute;
+    display: flex;
+    left: 20px;
+    top: 10px;
+    height: 125px;
+    width: 125px;
+    background-color: #202a37;
+    border-radius: 30px;
+    box-shadow: 0 2px 0 2px #080f1b;
+    z-index: 2;
+}
+
+.back-camera{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000005;
+    background-color: #161819;
+}
+
+.camera-first{
+    top: 8px;
+    left: 10px;
+}
+
+.camera-second{
+    bottom: 8px;
+    left: 10px;
+}
+
+.camera-third{
+    top: 40px;
+    right: 10px;
+}
+
+.light{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bdbdc0;
+}
+
+.sensor{
+    position: absolute;
+    bottom: 8px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #141012;
+}
+
+.back-frame i{
+    justify-self: center;
+    align-self: center;
+    color: black;
+    font-size: 65px;
+    z-index: 2;
+}
+
+.back-first{
+    position: absolute;
+    border-radius: 10px 0 0 10px;
+    left: -7px;
+    top: 125px;
+}
+
+.back-second{
+    right: -7px;
+    top: 125px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.back-third{
+    border-radius: 0 10px 10px 0;
+    right: -7px;
+    top: 175px;
+}
+
+@media (max-width:882px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
